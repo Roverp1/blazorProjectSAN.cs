@@ -1,0 +1,33 @@
+﻿@page "/counter"
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+<hr />
+
+<div class="alert alert-danger" role="alert">
+    @if (currentCount > 0)
+    {
+       <p>Only @currentCount clicks left until 0</p> 
+    } else if (currentCount == 0)
+    {
+        <p>You should stop immediately</p>
+    } else
+    {
+        <p>You're over the limit.</p>
+    }
+</div>
+
+@code {
+    private int currentCount = 10;
+
+    private void IncrementCount()
+    {
+        currentCount--;
+    }
+}
