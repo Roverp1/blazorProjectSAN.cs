@@ -6,7 +6,7 @@ Web application written using the Blazor WebAssembly framework, as a homework as
 The main changes are as follows:
 
 - Home page styled.
-- Counter reversal and warning added.
+- Counter reversed and warning added.
 - Todo List created.
 - Changed NavMenu.
 - Reusable InfoMessage added in "./Test/Shared/InfoMessage.razor".
